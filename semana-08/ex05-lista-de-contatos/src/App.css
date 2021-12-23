@@ -1,0 +1,46 @@
+body{
+    background-color: aqua;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100vh;
+    /* border-radius: 8px; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+.img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.profile-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.profile{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    padding: 20px;
+    gap: 15px;
+    background-color: white;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.user span{
+    font-weight: bold;
+}
