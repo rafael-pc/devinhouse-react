@@ -8,10 +8,8 @@ body{
     max-width: 900px;
     margin: 0 auto;
     height: 100vh;
-    /* border-radius: 8px; */
     justify-content: center;
     align-items: center;
-    /* background-color: aquamarine; */
 }
 .img{
     width: 90px;

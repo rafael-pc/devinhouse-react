@@ -1,0 +1,40 @@
+body{
+    background-color: #DEDEDE;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    width: 160px;
+    height: 160px;
+}
+.description{
+    text-align: center;
+    font-weight: bold;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    width: 160px;
+    height: 300px;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
+}
+.price{
+    font-weight: bold;
+    color: #FFBD00;
+}
