@@ -1,0 +1,101 @@
+function Tabela({ title, description, columns, data }) {
+  return (
+    <>
+      <h1 className="title">{title}</h1>
+      <p className="description">{description}</p>
+      <table className="table">
+        <thead className="header">
+          <tr>
+            <th>{[columns[0]]}</th>
+            <th>{[columns[1]]}</th>
+            <th>{[columns[2]]}</th>
+          </tr>
+        </thead>
+        <tbody className="row">
+          <tr>
+            <td>{[data[0].event]}</td>
+            <td>{[data[1].deviceId]}</td>
+            <td>{[data[1].comment]}</td>
+          </tr>
+          <tr>
+            <td>{[data[0].event]}</td>
+            <td>{[data[1].deviceId]}</td>
+            <td>{[data[1].comment]}</td>
+          </tr>
+          <tr>
+            <td>{[data[0].event]}</td>
+            <td>{[data[1].deviceId]}</td>
+            <td>{[data[1].comment]}</td>
+          </tr>
+          <tr>
+            <td>{[data[0].event]}</td>
+            <td>{[data[1].deviceId]}</td>
+            <td>{[data[1].comment]}</td>
+          </tr>
+          <tr>
+            <td>{[data[0].event]}</td>
+            <td>{[data[1].deviceId]}</td>
+            <td>{[data[1].comment]}</td>
+          </tr>
+          <tr>
+            <td>{[data[0].event]}</td>
+            <td>{[data[1].deviceId]}</td>
+            <td>{[data[1].comment]}</td>
+          </tr>
+          <tr>
+            <td>{[data[0].event]}</td>
+            <td>{[data[1].deviceId]}</td>
+            <td>{[data[1].comment]}</td>
+          </tr>
+          <tr>
+            <td>{[data[0].event]}</td>
+            <td>{[data[1].deviceId]}</td>
+            <td>{[data[1].comment]}</td>
+          </tr>
+          <tr>
+            <td>{[data[0].event]}</td>
+            <td>{[data[1].deviceId]}</td>
+            <td>{[data[1].comment]}</td>
+          </tr>
+          <tr>
+            <td>{[data[0].event]}</td>
+            <td>{[data[1].deviceId]}</td>
+            <td>{[data[1].comment]}</td>
+          </tr>
+          <tr>
+            <td>{[data[0].event]}</td>
+            <td>{[data[1].deviceId]}</td>
+            <td>{[data[1].comment]}</td>
+          </tr>
+          <tr>
+            <td>{[data[0].event]}</td>
+            <td>{[data[1].deviceId]}</td>
+            <td>{[data[1].comment]}</td>
+          </tr>
+          <tr>
+            <td>{[data[0].event]}</td>
+            <td>{[data[1].deviceId]}</td>
+            <td>{[data[1].comment]}</td>
+          </tr>
+          <tr>
+            <td>{[data[0].event]}</td>
+            <td>{[data[1].deviceId]}</td>
+            <td>{[data[1].comment]}</td>
+          </tr>
+          <tr>
+            <td>{[data[0].event]}</td>
+            <td>{[data[1].deviceId]}</td>
+            <td>{[data[1].comment]}</td>
+          </tr>
+          <tr>
+            <td>{[data[0].event]}</td>
+            <td>{[data[1].deviceId]}</td>
+            <td>{[data[1].comment]}</td>
+          </tr>
+        </tbody>
+      </table>
+    </>
+  );
+}
+
+export default Tabela;

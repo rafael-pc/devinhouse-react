@@ -1,0 +1,31 @@
+body {
+  font: normal medium/1.4 sans-serif;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.description{
+  padding: 30px;
+  text-align: center;
+}
+.table {
+  width: 80%;
+}
+.table th, td {
+  padding: 0.25rem;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+.row tr:nth-child(odd) {
+  background: #eee;
+}
