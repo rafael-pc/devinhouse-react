@@ -18,17 +18,17 @@ import { useEffect } from "react";
 
 function App() {
   // useState
-  const [starwars, setStarwars] = useState({});
-  const [idCharacter, setidCharacter] = useState(1);
+  const [personagem, setPersonagem] = useState({});
+  const [idPersonagem, setidPersonagem] = useState(1);
 
   useEffect(() => {
     async function getPerson(id) {
       const response = await fetch(`https://swapi.py4e.com/api/people/${id}`);
-      const starwarsJson = await response.json();
-      setStarwars(starwarsJson);
+      const personagemJson = await response.json();
+      setPersonagem(personagemJson);
     }
-    getPerson(idCharacter);
-  }, [idCharacter]);
+    getPerson(idPersonagem);
+  }, [idPersonagem]);
 
   // useEffect para alterar título
 
@@ -36,19 +36,19 @@ function App() {
 
   return (
     <div>
-      <Header title={starwars.name} />
+      <Header title={personagem.name} />
       <SeletorPersonagem
-        valor={parseInt(idCharacter)}
-        onChange={(e) => setidCharacter(e.target.value)}
+        valor={parseInt(idPersonagem)}
+        onChange={(e) => setidPersonagem(e.target.value)}
       />
       <Personagem
-        nome={starwars.name}
-        nascimento={starwars.birth_year}
-        genero={starwars.gender}
-        peso={starwars.mass}
-        altura={starwars.height}
-        corOlhos={starwars.eye_color}
-        corCabelo={starwars.hair_color}
+        nome={personagem.name}
+        nascimento={personagem.birth_year}
+        genero={personagem.gender}
+        peso={personagem.mass}
+        altura={personagem.height}
+        corOlhos={personagem.eye_color}
+        corCabelo={personagem.hair_color}
       />
     </div>
   );
